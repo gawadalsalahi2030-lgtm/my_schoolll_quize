@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبادرة نافس الرقمية التفاعلية</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header class="page-header">
+
+        <h1 class="main-title">مبادرة نافس الرقمية التفاعلية</h1>
+        <p class="subjects-grades">
+            لمواد العلوم والرياضيات واللغة العربية <br>
+            للصف الثالث الابتدائي والسادس الابتدائي والثالث المتوسط
+        </p>
+        <div class="contact-info">
+            <div class="info-item">
+                <span class="label">المعلمة</span>
+                <span class="value">عفاف الفضلي</span>
+            </div>
+            <div class="info-item">
+                <span class="label">مديرة المدرسة</span>
+                <span class="value">غرسه العبيدالله</span>
+            </div>
+            <p class="school-name">مدرسة المتوسطة الأولى بالمزاح</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <div class="registration-card">
+            
+            <div class="trophy-section">
+                <span class="trophy-icon">🏆</span>
+            </div>
+
+            <h2>مرحباً بك في مسابقة نافس التفاعلية!</h2>
+            <p class="welcome-text">اختر معلوماتك في العلوم والرياضيات واللغة العربية واحصل على شهادة إنجاز</p>
+
+            <form id="registration-form">
+                
+                <label for="name">اسم المتسابق</label>
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                </div>
+
+                <label for="grade">الصف الدراسي</label>
+                <div class="input-group">
+                    <select id="grade" name="grade" required>
+                        <option value="" disabled selected>اختر الصف</option>
+                        <option value="ثالث ابتدائي">الثالث الابتدائي</option>
+                        <option value="سادس ابتدائي">السادس الابتدائي</option>
+                        <option value="ثالث متوسط">الثالث المتوسط</option>
+                    </select>
+                </div>
+
+                <label for="subject">المادة</label>
+                <div class="input-group">
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>اختر المادة</option>
+                        <option value="علوم">العلوم</option>
+                        <option value="رياضيات">الرياضيات</option>
+                        <option value="لغة عربية">اللغة العربية</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="start-button">
+                    ابدأ المسابقة <span class="rocket">🚀</span>
+                </button>
+            </form>
+
+        </div>
+
+        <div id="quiz-area" class="quiz-area hidden">
+            <h2 id="quiz-title"></h2>
+            <div id="question-container">
+                </div>
+            <button id="next-button" class="start-button">السؤال التالي</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
